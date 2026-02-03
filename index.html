@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Singh | Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tighter text-blue-600">RAJ SINGH</a>
+            <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wide">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-slate-600" id="menu-btn">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section id="hero" class="pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <span class="inline-block px-4 py-1.5 mb-4 text-xs font-semibold bg-blue-100 text-blue-700 rounded-full uppercase tracking-widest">BCA Student & Web Developer</span>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-slate-900 leading-tight">Crafting Digital <span class="text-blue-600">Experiences.</span></h1>
+                <p class="text-lg text-slate-600 mb-8 max-w-xl leading-relaxed">
+                    A BCA student at MSIT with a focus on React and modern web technologies. Disciplined Super Randonneur cyclist and tech club representative eager to solve real-world problems.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#contact" class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg shadow-blue-200 hover:bg-blue-700 transition">Get In Touch</a>
+                    <a href="https://github.com/Rai2335" target="_blank" class="px-8 py-3 bg-white border border-slate-200 font-semibold rounded-lg hover:bg-slate-50 transition flex items-center gap-2">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition duration-500">
+                    <img src="https://github.com/Rai2335.png" alt="Raj Singh" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/illustrations/a-drawing-of-a-man-wearing-a-tie-7EbR-jFH7cI'">
+                </div>
+                <div class="absolute -bottom-4 -left-4 bg-white p-4 rounded-xl shadow-lg flex items-center gap-3">
+                    <i class="fa-solid fa-bicycle text-blue-600 text-2xl"></i>
+                    <div>
+                        <p class="text-xs text-slate-500 uppercase font-bold">Endurance Athlete</p>
+                        <p class="text-sm font-bold">Super Randonneur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white px-6 border-y border-slate-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Education & Background</h2>
+                    <div class="space-y-8">
+                        <div class="relative pl-8 border-l-2 border-blue-600">
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-1"></div>
+                            <h3 class="text-xl font-bold">Meghnad Saha Institute Of Technology</h3>
+                            <p class="text-blue-600 font-medium">Bachelor of Computer Applications</p>
+                            <p class="text-sm text-slate-500 mb-2 italic">Aug. 2023 — Present | Kolkata, WB</p>
+                            <p class="text-slate-600 text-sm">Relevant Coursework: OOP, DBMS, DSA, OS, Computer Networking, Internet Technology.</p>
+                        </div>
+                        <div class="relative pl-8 border-l-2 border-slate-200">
+                            <div class="absolute w-4 h-4 bg-slate-200 rounded-full -left-[9px] top-1"></div>
+                            <h3 class="text-lg font-bold">Kendriya Vidyalaya Ballygunge</h3>
+                            <p class="text-slate-600">Higher Secondary (CBSE) — 80%</p>
+                            <p class="text-slate-600">Secondary Education (CBSE) — 80%</p>
+                            <p class="text-sm text-slate-500 italic">Completed 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Extracurricular Leadership</h2>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
+                            <h3 class="font-bold flex items-center gap-2"><i class="fa-solid fa-code text-blue-600"></i> Megatronix — Tech Club</h3>
+                            <p class="text-sm text-slate-600 mt-2 italic leading-relaxed">Coordinator and member since 2024. Organizing workshops and executing Paridhi 2025, MSIT's annual tech fest.</p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
+                            <h3 class="font-bold flex items-center gap-2"><i class="fa-solid fa-medal text-blue-600"></i> Audax India Randonneurs</h3>
+                            <p class="text-sm text-slate-600 mt-2 italic leading-relaxed">Successfully completed 200km, 300km, 400km, and 600km brevets. Building resilience and time management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Technical Arsenal</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100 text-center hover:border-blue-300 transition group">
+                    <i class="fa-solid fa-code text-4xl text-blue-600 mb-4 group-hover:scale-110 transition"></i>
+                    <h3 class="font-bold text-lg mb-2">Languages</h3>
+                    <p class="text-sm text-slate-500">C, Python, JavaScript, SQL</p>
+                </div>
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100 text-center hover:border-blue-300 transition group">
+                    <i class="fa-solid fa-layer-group text-4xl text-blue-600 mb-4 group-hover:scale-110 transition"></i>
+                    <h3 class="font-bold text-lg mb-2">Frontend</h3>
+                    <p class="text-sm text-slate-500">React.js, HTML5, CSS3, JavaScript</p>
+                </div>
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100 text-center hover:border-blue-300 transition group">
+                    <i class="fa-solid fa-server text-4xl text-blue-600 mb-4 group-hover:scale-110 transition"></i>
+                    <h3 class="font-bold text-lg mb-2">Backend</h3>
+                    <p class="text-sm text-slate-500">Node.js, Express, MongoDB, MySQL</p>
+                </div>
+                <div class="p-8 bg-white rounded-2xl shadow-sm border border-slate-100 text-center hover:border-blue-300 transition group">
+                    <i class="fa-solid fa-wrench text-4xl text-blue-600 mb-4 group-hover:scale-110 transition"></i>
+                    <h3 class="font-bold text-lg mb-2">Tools</h3>
+                    <p class="text-sm text-slate-500">VS Code, Cursor AI, Git, GitHub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-slate-900 text-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-bold mb-4">Featured Work</h2>
+                    <p class="text-slate-400">Collaborative and individual development projects.</p>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="group bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 hover:border-blue-500 transition shadow-2xl">
+                    <div class="h-64 bg-slate-700 flex items-center justify-center relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=800" class="absolute w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-500">
+                        <div class="relative z-10 text-center">
+                            <span class="px-3 py-1 bg-blue-600 rounded text-xs uppercase font-bold tracking-widest">October 2024</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 italic">Taaza Dandiya 2024</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Developed a responsive, interactive frontend for the event website using React.js. Optimized component architecture for 300k reach and aligned with branding goals.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] font-bold px-2 py-1 bg-slate-700 rounded uppercase">React.js</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-slate-700 rounded uppercase">Express.js</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-slate-700 rounded uppercase">MySQL</span>
+                        </div>
+                        <a href="https://github.com/Rai2335" class="text-blue-400 font-bold text-sm flex items-center gap-2 group-hover:gap-4 transition-all">VIEW REPOSITORY <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+                <div class="group bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 hover:border-blue-500 transition shadow-2xl">
+                    <div class="h-64 bg-slate-700 flex items-center justify-center relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800" class="absolute w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-500">
+                        <div class="relative z-10 text-center">
+                            <span class="px-3 py-1 bg-blue-600 rounded text-xs uppercase font-bold tracking-widest">November 2024</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 italic">GDGC MSIT Website</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Contributed to the official Google Developer Groups MSIT website. Implemented dark/light mode and focused on accessibility and performance across devices.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-[10px] font-bold px-2 py-1 bg-slate-700 rounded uppercase">HTML</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-slate-700 rounded uppercase">CSS</span>
+                            <span class="text-[10px] font-bold px-2 py-1 bg-slate-700 rounded uppercase">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/Rai2335" class="text-blue-400 font-bold text-sm flex items-center gap-2 group-hover:gap-4 transition-all">VIEW REPOSITORY <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 bg-blue-600 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Let's build something together</h2>
+            <p class="text-xl text-blue-100 mb-12">I'm currently seeking opportunities to contribute to dynamic tech teams and real-world projects.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-blue-700/50 p-6 rounded-2xl">
+                    <i class="fa-solid fa-envelope text-2xl mb-4"></i>
+                    <p class="text-sm text-blue-200">Email Me</p>
+                    <a href="mailto:sinehrai22996@emaiLcom" class="font-bold">sinehrai22996@email.com</a>
+                </div>
+                <div class="bg-blue-700/50 p-6 rounded-2xl">
+                    <i class="fa-solid fa-phone text-2xl mb-4"></i>
+                    <p class="text-sm text-blue-200">Call Me</p>
+                    <a href="tel:+919432561970" class="font-bold">+91-9432561970</a>
+                </div>
+                <div class="bg-blue-700/50 p-6 rounded-2xl">
+                    <i class="fa-solid fa-location-dot text-2xl mb-4"></i>
+                    <p class="text-sm text-blue-200">Location</p>
+                    <p class="font-bold">Kolkata, WB - 700039</p>
+                </div>
+            </div>
+            <div class="mt-16 flex justify-center gap-6">
+                <a href="https://github.com/Rai2335" target="_blank" class="text-3xl hover:text-slate-900 transition"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="text-3xl hover:text-slate-900 transition"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-slate-400 text-sm border-t border-slate-100 bg-white">
+        &copy; 2025 Raj Singh | BCA Student at MSIT
+    </footer>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            const nav = document.querySelector('.md\\:flex');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('left-0');
+            nav.classList.toggle('w-full');
+            nav.classList.toggle('bg-white');
+            nav.classList.toggle('p-6');
+            nav.classList.toggle('space-y-4');
+        });
+    </script>
+</body>
+</html>
